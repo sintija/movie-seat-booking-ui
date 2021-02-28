@@ -12,6 +12,28 @@ function updateSelectedCount() {
     let selectedSeatsCount = selectedSeats.length;
     total.innerText = selectedSeatsCount * ticketPrice;
     count.innerHTML = selectedSeatsCount;
+    // console.log(selectedSeats);
+    //Adding to the local storage 
+    //1.Copy selectd seats into the array (using spread operator to copy data from selected seats )
+    let seatIndex = [...selectedSeats];
+
+
+
+
+
+
+
+    //Map through array
+    //return a new array indexes
+
+
+
+
+
+
+
+
+
 }
 
 // console.log(typeof ticketPrice);
@@ -30,11 +52,8 @@ function changeTheTicketPrice(event) {
 
 
 
-
-
-
 //Click to the seat
 container.addEventListener('click', selectSeat);
 
 //Movie select event on the list change
-movieSelect.addEventListener('change', changeTheTicketPrice)
+movieSelect.addEventListener('change', changeTheTicketPrice);
